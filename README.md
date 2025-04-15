@@ -1,2 +1,2 @@
 # Gamma-Stimulator
-Gamma Stimulator
+iOS app with companion watchOS app that receives real time sleep stage data from the Apple Watch. When the Apple Watch shows entry into slow wave sleep, this will trigger the iOS app to initiate 40 Hertz visual and auditory stimulation for 15 minutes. When the data shows the onset of slow wave sleep, the timer in the app is set to 15 minutes and begins stimulation. At the end of the timed period, the app continues to monitor sleep data received from the Apple Watch in real time to detect the onset of the next slow wave sleep to repeat the 40 Hertz stimulation. This occurs for every sleep cycle until sleep data shows the user has awakened in the morning.
