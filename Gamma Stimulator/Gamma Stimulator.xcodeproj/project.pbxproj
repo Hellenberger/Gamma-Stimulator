@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D77BAD42BD0C9BC0043C722 /* pulse.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 3D77BAD32BD0C9BC0043C722 /* pulse.aiff */; };
+		3DB2DE612DADB26B00AA21A3 /* SleepStimulationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2DE602DADB26B00AA21A3 /* SleepStimulationController.swift */; };
+		3DB2DE622DADB42100AA21A3 /* SleepStage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2DE5B2DADA4D200AA21A3 /* SleepStage.swift */; };
+		3DB2DE632DADB42900AA21A3 /* SleepCycleManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2DE5C2DADA4E000AA21A3 /* SleepCycleManagerDelegate.swift */; };
+		3DB2DE642DADB44100AA21A3 /* SleepStimulationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2DE5F2DADA56200AA21A3 /* SleepStimulationControllerDelegate.swift */; };
+		3DB2DE652DADB44900AA21A3 /* PhoneWatchConnectorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2DE5E2DADA52B00AA21A3 /* PhoneWatchConnectorDelegate.swift */; };
+		3DB2DE662DADB4BD00AA21A3 /* WatchSensorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2DE5D2DADA51F00AA21A3 /* WatchSensorManager.swift */; };
+		3DB2DE672DADB4C700AA21A3 /* HealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2DE5A2DADA4C400AA21A3 /* HealthKitManager.swift */; };
+		3DB2DE692DADB67300AA21A3 /* SleepStageDetectorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB2DE682DADB67300AA21A3 /* SleepStageDetectorDelegate.swift */; };
+		3DB2DE782DADE5C900AA21A3 /* Gamma Stimulator Watch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3DB2DE6E2DADE5C800AA21A3 /* Gamma Stimulator Watch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3DC3959E2B939C110007BC8C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3959D2B939C110007BC8C /* AppDelegate.swift */; };
+		3DC395A02B939C110007BC8C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC3959F2B939C110007BC8C /* SceneDelegate.swift */; };
+		3DC395A22B939C110007BC8C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC395A12B939C110007BC8C /* ViewController.swift */; };
+		3DC395A52B939C110007BC8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC395A32B939C110007BC8C /* Main.storyboard */; };
+		3DC395A72B939C120007BC8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC395A62B939C120007BC8C /* Assets.xcassets */; };
+		3DC395AA2B939C120007BC8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC395A82B939C120007BC8C /* LaunchScreen.storyboard */; };
+		3DC395B52B952EFD0007BC8C /* EEG_Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DC395B42B952EFD0007BC8C /* EEG_Icon.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3DB2DE762DADE5C900AA21A3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3DC395922B939C110007BC8C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3DB2DE6D2DADE5C800AA21A3;
+			remoteInfo = "Gamma Stimulator Watch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3DB2DE7C2DADE5C900AA21A3 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3DB2DE782DADE5C900AA21A3 /* Gamma Stimulator Watch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D77BAD32BD0C9BC0043C722 /* pulse.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = pulse.aiff; sourceTree = "<group>"; };
+		3DB2DE5A2DADA4C400AA21A3 /* HealthKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitManager.swift; sourceTree = "<group>"; };
+		3DB2DE5B2DADA4D200AA21A3 /* SleepStage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepStage.swift; sourceTree = "<group>"; };
+		3DB2DE5C2DADA4E000AA21A3 /* SleepCycleManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepCycleManagerDelegate.swift; sourceTree = "<group>"; };
+		3DB2DE5D2DADA51F00AA21A3 /* WatchSensorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchSensorManager.swift; sourceTree = "<group>"; };
+		3DB2DE5E2DADA52B00AA21A3 /* PhoneWatchConnectorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWatchConnectorDelegate.swift; sourceTree = "<group>"; };
+		3DB2DE5F2DADA56200AA21A3 /* SleepStimulationControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepStimulationControllerDelegate.swift; sourceTree = "<group>"; };
+		3DB2DE602DADB26B00AA21A3 /* SleepStimulationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepStimulationController.swift; sourceTree = "<group>"; };
+		3DB2DE682DADB67300AA21A3 /* SleepStageDetectorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepStageDetectorDelegate.swift; sourceTree = "<group>"; };
+		3DB2DE6E2DADE5C800AA21A3 /* Gamma Stimulator Watch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gamma Stimulator Watch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC3959A2B939C110007BC8C /* Gamma Stimulator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gamma Stimulator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DC3959D2B939C110007BC8C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3DC3959F2B939C110007BC8C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3DC395A12B939C110007BC8C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3DC395A42B939C110007BC8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DC395A62B939C120007BC8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DC395A92B939C120007BC8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DC395AB2B939C120007BC8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DC395B42B952EFD0007BC8C /* EEG_Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = EEG_Icon.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3DB2DE6F2DADE5C800AA21A3 /* Gamma Stimulator Watch Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Gamma Stimulator Watch Watch App"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DB2DE6B2DADE5C800AA21A3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC395972B939C110007BC8C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3DC395912B939C110007BC8C = {
+			isa = PBXGroup;
+			children = (
+				3DC3959C2B939C110007BC8C /* Gamma Stimulator */,
+				3DB2DE6F2DADE5C800AA21A3 /* Gamma Stimulator Watch Watch App */,
+				3DC3959B2B939C110007BC8C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3DC3959B2B939C110007BC8C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DC3959A2B939C110007BC8C /* Gamma Stimulator.app */,
+				3DB2DE6E2DADE5C800AA21A3 /* Gamma Stimulator Watch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DC3959C2B939C110007BC8C /* Gamma Stimulator */ = {
+			isa = PBXGroup;
+			children = (
+				3DC3959D2B939C110007BC8C /* AppDelegate.swift */,
+				3DB2DE682DADB67300AA21A3 /* SleepStageDetectorDelegate.swift */,
+				3DC3959F2B939C110007BC8C /* SceneDelegate.swift */,
+				3DC395A12B939C110007BC8C /* ViewController.swift */,
+				3D77BAD32BD0C9BC0043C722 /* pulse.aiff */,
+				3DC395A32B939C110007BC8C /* Main.storyboard */,
+				3DB2DE5A2DADA4C400AA21A3 /* HealthKitManager.swift */,
+				3DB2DE5B2DADA4D200AA21A3 /* SleepStage.swift */,
+				3DB2DE5C2DADA4E000AA21A3 /* SleepCycleManagerDelegate.swift */,
+				3DB2DE5D2DADA51F00AA21A3 /* WatchSensorManager.swift */,
+				3DB2DE5E2DADA52B00AA21A3 /* PhoneWatchConnectorDelegate.swift */,
+				3DB2DE5F2DADA56200AA21A3 /* SleepStimulationControllerDelegate.swift */,
+				3DB2DE602DADB26B00AA21A3 /* SleepStimulationController.swift */,
+				3DC395A62B939C120007BC8C /* Assets.xcassets */,
+				3DC395B42B952EFD0007BC8C /* EEG_Icon.png */,
+				3DC395A82B939C120007BC8C /* LaunchScreen.storyboard */,
+				3DC395AB2B939C120007BC8C /* Info.plist */,
+			);
+			path = "Gamma Stimulator";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DB2DE6D2DADE5C800AA21A3 /* Gamma Stimulator Watch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DB2DE792DADE5C900AA21A3 /* Build configuration list for PBXNativeTarget "Gamma Stimulator Watch Watch App" */;
+			buildPhases = (
+				3DB2DE6A2DADE5C800AA21A3 /* Sources */,
+				3DB2DE6B2DADE5C800AA21A3 /* Frameworks */,
+				3DB2DE6C2DADE5C800AA21A3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3DB2DE6F2DADE5C800AA21A3 /* Gamma Stimulator Watch Watch App */,
+			);
+			name = "Gamma Stimulator Watch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Gamma Stimulator Watch Watch App";
+			productReference = 3DB2DE6E2DADE5C800AA21A3 /* Gamma Stimulator Watch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3DC395992B939C110007BC8C /* Gamma Stimulator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DC395AE2B939C120007BC8C /* Build configuration list for PBXNativeTarget "Gamma Stimulator" */;
+			buildPhases = (
+				3DC395962B939C110007BC8C /* Sources */,
+				3DC395972B939C110007BC8C /* Frameworks */,
+				3DC395982B939C110007BC8C /* Resources */,
+				3DB2DE7C2DADE5C900AA21A3 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB2DE772DADE5C900AA21A3 /* PBXTargetDependency */,
+			);
+			name = "Gamma Stimulator";
+			productName = "Gamma Stimulator";
+			productReference = 3DC3959A2B939C110007BC8C /* Gamma Stimulator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DC395922B939C110007BC8C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					3DB2DE6D2DADE5C800AA21A3 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					3DC395992B939C110007BC8C = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 3DC395952B939C110007BC8C /* Build configuration list for PBXProject "Gamma Stimulator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DC395912B939C110007BC8C;
+			productRefGroup = 3DC3959B2B939C110007BC8C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DC395992B939C110007BC8C /* Gamma Stimulator */,
+				3DB2DE6D2DADE5C800AA21A3 /* Gamma Stimulator Watch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DB2DE6C2DADE5C800AA21A3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC395982B939C110007BC8C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC395AA2B939C120007BC8C /* LaunchScreen.storyboard in Resources */,
+				3DC395A72B939C120007BC8C /* Assets.xcassets in Resources */,
+				3D77BAD42BD0C9BC0043C722 /* pulse.aiff in Resources */,
+				3DC395A52B939C110007BC8C /* Main.storyboard in Resources */,
+				3DC395B52B952EFD0007BC8C /* EEG_Icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DB2DE6A2DADE5C800AA21A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DC395962B939C110007BC8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DC395A22B939C110007BC8C /* ViewController.swift in Sources */,
+				3DB2DE662DADB4BD00AA21A3 /* WatchSensorManager.swift in Sources */,
+				3DB2DE652DADB44900AA21A3 /* PhoneWatchConnectorDelegate.swift in Sources */,
+				3DB2DE642DADB44100AA21A3 /* SleepStimulationControllerDelegate.swift in Sources */,
+				3DC3959E2B939C110007BC8C /* AppDelegate.swift in Sources */,
+				3DB2DE612DADB26B00AA21A3 /* SleepStimulationController.swift in Sources */,
+				3DB2DE622DADB42100AA21A3 /* SleepStage.swift in Sources */,
+				3DC395A02B939C110007BC8C /* SceneDelegate.swift in Sources */,
+				3DB2DE672DADB4C700AA21A3 /* HealthKitManager.swift in Sources */,
+				3DB2DE692DADB67300AA21A3 /* SleepStageDetectorDelegate.swift in Sources */,
+				3DB2DE632DADB42900AA21A3 /* SleepCycleManagerDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3DB2DE772DADE5C900AA21A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3DB2DE6D2DADE5C800AA21A3 /* Gamma Stimulator Watch Watch App */;
+			targetProxy = 3DB2DE762DADE5C900AA21A3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3DC395A32B939C110007BC8C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC395A42B939C110007BC8C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DC395A82B939C120007BC8C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DC395A92B939C120007BC8C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DB2DE7A2DADE5C900AA21A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gamma-Stimulator-Watch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gamma Stimulator Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.browser.viewer.Gamma-Stimulator";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.browser.viewer.Gamma-Stimulator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Debug;
+		};
+		3DB2DE7B2DADE5C900AA21A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gamma-Stimulator-Watch-Watch-App-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gamma Stimulator Watch";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.browser.viewer.Gamma-Stimulator";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.browser.viewer.Gamma-Stimulator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 11.4;
+			};
+			name = Release;
+		};
+		3DC395AC2B939C120007BC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = S4D83HCYW4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DC395AD2B939C120007BC8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = S4D83HCYW4;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DC395AF2B939C120007BC8C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gamma Stimulator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gamma Stimulator";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Gamma Stimulator plays a click sound";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Gamma Stimulator uses the camera function to flash light.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.browser.viewer.Gamma-Stimulator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3DC395B02B939C120007BC8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Gamma Stimulator/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Gamma Stimulator";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Gamma Stimulator plays a click sound";
+				INFOPLIST_KEY_NSCameraUsageDescription = "Gamma Stimulator uses the camera function to flash light.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.browser.viewer.Gamma-Stimulator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DB2DE792DADE5C900AA21A3 /* Build configuration list for PBXNativeTarget "Gamma Stimulator Watch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DB2DE7A2DADE5C900AA21A3 /* Debug */,
+				3DB2DE7B2DADE5C900AA21A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC395952B939C110007BC8C /* Build configuration list for PBXProject "Gamma Stimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC395AC2B939C120007BC8C /* Debug */,
+				3DC395AD2B939C120007BC8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DC395AE2B939C120007BC8C /* Build configuration list for PBXNativeTarget "Gamma Stimulator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DC395AF2B939C120007BC8C /* Debug */,
+				3DC395B02B939C120007BC8C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DC395922B939C110007BC8C /* Project object */;
+}
