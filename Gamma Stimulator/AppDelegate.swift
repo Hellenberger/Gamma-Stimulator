@@ -10,7 +10,7 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+//let viewController = ViewController()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -30,6 +30,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        UserDefaults.standard.set(Date(), forKey: "LastBackgroundDate")
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+        // Called when the app is about to terminate.
+        // Save data if appropriate. See also applicationDidEnterBackground.
+        // Release any resources that can be recreated in your session's init methods
+    }
+
 
 
 }
